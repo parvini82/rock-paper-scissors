@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .game {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .game h2 {
+            margin-top: 0;
+        }
+
+        .game .options {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .game .options button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 3px;
+            background-color: #ccc;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .game .options button:hover {
+            background-color: #999;
+            color: #fff;
+        }
+
+        .game .result {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <h2>Rock Paper Scissors</h2>
+        <div class="options">
+            <button onclick="playGame(1)">Rock</button>
+            <button onclick="playGame(2)">Paper</button>
+            <button onclick="playGame(3)">Scissors</button>
+        </div>
+        <p class="result" id="result">Choose an option to start the game!</p>
+    </div>
+
+    
+</body>
+<script src="RPS-js.js"></script>
+</html>
